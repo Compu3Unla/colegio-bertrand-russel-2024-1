@@ -98,7 +98,8 @@ body {
 }
 
 .fotos-25-anios {
-    height: 1350px;
+    width: fit-content;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -138,7 +139,7 @@ footer ul li {
     padding: 5px 0px;
     color: #ffffff;
     font-family: "alegreya sans";
-    font-size: 1.5em;
+    font-size: 0,5em;
 }
 
 .mail-footer {
@@ -163,3 +164,5 @@ footer ul li {
     flex-direction: row;
     align-items: center;
 }
+
+/* hola ojala funcione */
