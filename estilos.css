@@ -20,6 +20,7 @@ header nav {
     flex-direction: row;
     justify-content: space-between;
     padding-right: 40px;
+
 }
 
 .logo-header img {
@@ -68,6 +69,7 @@ nav ul li:hover {
 
 body {
     background-color: #dddddd;
+    background-image: url(img/fondo-hojas.png);
 }
 
 /* inicio 25 años */
@@ -201,8 +203,207 @@ footer ul li {
     font-size: 1.2em;
 }
 
-/* esto se pone arriba de todo después porque no quiero hacer lío */
+/*index*/
 
-body {
-    background-image: url(img/fondo-hojas.png);
+/*carrusel*/
+.carrusel_index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel_index h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 85;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    color: #dddddd;
+    font-family: "alegreya sans";
+    font-size: 7em;
+    padding-top: 15px;
+
+}
+
+.carrusel_img {
+    background-image: url(img/carrusel-foto-1.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    animation: carrusel_fotos 15s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes carrusel_fotos {
+    33% {background-image: url(img/carrusel-foto-2.jpg);}
+    65% {background-image: url(img/carrusel-foto-3.jpg);}
+}
+
+.carrusel_slider_puntos {
+    background-image: url(img/puntos_carrusel_index-01.svg);
+    height: 21px;
+    width: 132px;
+    margin-top: 20px;
+    animation: carrusel_puntos 15s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes carrusel_puntos {
+    33% {background-image: url(img/puntos_carrusel_index-02.svg);}
+    65% {background-image: url(img/puntos_carrusel_index-03.svg);}
+}
+
+/*parte estática del ideario*/
+.section_ideario {
+    height: auto;
+    width: 100%;
+    padding: 100px 100px 100px 100px ;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px
+    
+}
+
+.ideario {
+    width: 45%;
+    max-width: 800px;
+}
+.ideario h3 {
+    background-color: #4D8E5F ;
+    font-family: "alegreya sans";
+    color: #dddddd;
+    font-size: 2em;
+    padding: 15px ;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.ideario ul {
+    margin-top: 27px;
+    background-color: #2d3190;
+    padding: 56px 87px;
+    border-radius: 60px 0px;
+}
+
+.ideario ul li {
+    font-size: 1.2em;
+    font-family: "alegreya sans";
+    list-style-type: none;
+    color: #dddddd;
+    padding-bottom: 20px ;
+    max-width: 600px;
+    letter-spacing: 0.2px;
+}
+
+/* botones del ideario*/
+.botones_ideario ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.botones_ideario ul li {
+    list-style-type: none;
+}
+.botones_ideario ul li button {
+    background-color: #2d3190;
+    padding: 25px 87px;
+    color: #dddddd;
+    border-radius: 40px 0px;
+    text-align: center;
+    font-family: "alegreya sans";
+    font-weight: 700;
+    border: 0px;
+    letter-spacing: 0,5px;
+    font-size: 1em;
+}
+
+.botones_ideario ul li button:hover {
+    background-color: #4D8E5F;
+    cursor: pointer;
+}
+
+/*popups del ideario*/
+
+.popup_maternal, .popup_inicial, .popup_primario, .popup_secundario {
+    width: 45%;
+    max-width: 800px;
+    z-index: 1;
+    border: none;
+    display: flex;
+    position: absolute;
+    top: 937px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #4D8E5F;
+    border-radius: 60px 0px;
+    display: none;
+}
+
+.popup_maternal a, .popup_inicial a, .popup_primario a, .popup_secundario a{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    color: #dddddd;
+    font-family: "alegreya sans";
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.popup_maternal img, .popup_inicial img, .popup_primario img, .popup_secundario img {
+    position: absolute;
+    left: 93%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.imagen_maternal {
+    background-image: url(img/foto-maternal.jpg);
+    width:388px;
+
+}
+
+.imagen_texto_maternal, .imagen_texto_inicial, .imagen_texto_primario, .imagen_texto_secundario {
+    display: flex;
+    height: 80%;
+}
+
+.imagen_texto_maternal ul, .imagen_texto_inicial ul, .imagen_texto_primario ul, .imagen_texto_secundario ul {
+    width: 40%;
+    padding: 56px 60px 25px 60px;
+}
+
+.imagen_texto_maternal ul li, .imagen_texto_inicial ul li, .imagen_texto_primario ul li, .imagen_texto_secundario ul li {
+    color: #dddddd;
+    font-family: "alegreya sans";
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.imagen_inicial {
+    background-image: url(img/foto-jardin.jpg);
+    width:388px;
+    background-size: cover;
+}
+
+.imagen_primario {
+    background-image: url(img/foto-primaria.jpg);
+    width: 388px;
+    background-size: cover;
+}
+
+.imagen_secundario {
+    background-image: url(img/foto-secundaria.jpg);
+    width: 388px;
+    background-size: cover;
 }
