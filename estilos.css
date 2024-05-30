@@ -69,6 +69,7 @@ nav ul li:hover {
 
 body {
     background-color: #dddddd;
+    background-image: url(img/fondo-hojas.png);
 }
 
 /* inicio 25 años */
@@ -166,49 +167,41 @@ footer ul li {
     align-items: center;
 }
 
+/* confirmacion de inscripcion */
 
+.main-confirmacion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 320px 0px 160px 0px;
+}
 
+.gracias-confirmacion {
+    font-family: "Alegreya Sans";
+    color: #2d3190;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.gracias-elegirnos {
+    font-size: 3em;
+}
 
+.solicitud , .esperamos-verte {
+    font-size: 1.5em;
+    font-style: normal;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.colegio-confirmacion {
+    font-size: 1.2em;
+}
 
 /*index*/
 
