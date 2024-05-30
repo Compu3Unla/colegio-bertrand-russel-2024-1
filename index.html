@@ -1,11 +1,158 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Colegio Bertrand Russell</title>
-        <link href="estilos.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Colegio Bertrand Russell</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-header">
+                <img src="img/logo.svg" width="93px" height="165px" alt="logo del sitio">
+            </div>
+            <ul>
+                <li>Inicio</li>
+                <li>Trabajo</li>
+                <li>Visita</li>
+                <li class="inscribite">Inscribite</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carrusel_index">
+            <h2>Bienvenidos</h2>
+            <div class="carrusel_img"></div>
+            <div class="carrusel_slider_puntos"></div>
+        </section>
+        <section class="section_ideario">
+            <div class="ideario">
+                <h3>IDEARIO</h3>
+                <ul>
+                    <li>Desarrollar competencias de los educandos con nuevas estrategias de aprendizaje, permitiéndoles
+                        la aplicación dinámica de los conocimientos en distintos contextos.</li>
+                    <li>Propender a formar una comunidad educativa que revitalice las relaciones intergrupales sobre la
+                        base de valores éticos y el respeto por las diferencias.</li>
+                    <li>Garantizar una formación humanística integrando en el desarrollo programático los avances
+                        científicos y tecnológicos, a cuya realidad la escuela no puede permanecer ajena</li>
+                    <li> Jerarquizar la tarea docente en lo que hace al respeto por la función y al perfeccionamiento
+                        constante en servicio.</li>
+                    <li>Establecer relaciones permanentes con las familias para lograr una escuela mejor.</li>
+                </ul>
+            </div>
+            <div class="botones_ideario">
+                <ul>
+                    <li><button class="abrir_maternal" data-id="abrir_maternal">NIVEL MATERNAL</button></li>
+                    <li><button class="abrir_inicial" data-id="abrir_inicial">NIVEL INICIAL</button></li>
+                    <li><button class="abrir_primario" data-id="abrir_primario">NIVEL PRIMARIO</button></li>
+                    <li><button class="abrir_secundario" data-id="abrir_secundario">NIVEL SECUNDARIO</button></li>
+                </ul>
+            </div>
+
+            <dialog class="popup_maternal">
+                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" id="cerrar_dialogo">
+                <div class="imagen_texto_maternal">
+                    <div class="imagen_maternal">
+
+                    </div>
+
+                    <ul>
+                        <li>Salas desde dos años.</li>
+                        <li>Docentes especializados.</li>
+                        <li>Menú acorde a las necesidades por edad.</li>
+                        <li>En un clima cordial y cálido de trabajo, creamos vínculos afectivos fundamentales en la primera infancia.</li>
+                        <li>Aseguramos la articulación e interrelación con el nivel inicial, garantizando lacontinuidadpedagógica.</li>
+                        <li>Estimulación Temprana a través del Juego, para favorecer el desarrollo psicofísico respetando los ritmos personales.</li>
+
+                    </ul>
+
+                </div>
+                <a href="formulario.html" target="_self">Ir a formulario</a>
+            </dialog>
+
+            <dialog class="popup_inicial">
+                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" id="cerrar_dialogo">
+                <div class="imagen_texto_inicial">
+                    <div class="imagen_inicial">
+
+                    </div>
+
+                    <ul>
+                        <li>Un ambiente cálido y alegre para aprender en la creatividad y la reflexión.</li>
+                        <li>A partir de sala de 4 años Talleres en contraturno: Natación, murga, inglés, computación, arte y reciclado.</li>
+                        <li>Servicio de transporte hacia el club a cargo del colegio.</li>
+                        <li>Garantizamos la continuidad pedagógica a través de la articulación con el primer ciclo de la Primaria.</li>
+                        <li>Computación en todas las secciones a través de juegos didácticos, para aprender jugando en una sala propia del Jardín.</li>
+
+                    </ul>
+
+                </div>
+                <a href="formulario.html" target="_self">Ir a formulario</a>
+            </dialog>
+
+            <dialog class="popup_primario">
+                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" id="cerrar_dialogo">
+                <div class="imagen_texto_primario">
+                    <div class="imagen_primario">
+
+                    </div>
+
+                    <ul>
+                        <li>Metodología de estudios aplicada en cada situación áulica.</li>
+                        <li>Idioma inglés dividiendo el curso en dos grupos. A partir del cuarto año intensificado con la posibilidad de obtener la certificación internacional de la Universidad de Cambridge.</li>
+                        <li>Aire acondicionado frío calor en todas las aulas.</li>
+                        <li>Sala propia de primaria conectada a internet. Curso dividido en dos grupos con una computadora por alumno.</li>
+                        <li>Todas las actividades deportivas se realizan en las instalaciones de los dos gimnasios del colegio en Azara 2012.</li>
+
+                    </ul>
+
+                </div>
+                <a href="formulario.html" target="_self">Ir a formulario</a>
+            </dialog>
+
+            <dialog class="popup_secundario">
+                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" id="cerrar_dialogo">
+                <div class="imagen_texto_secundario">
+                    <div class="imagen_secundario">
+
+                    </div>
+
+                    <ul>
+                        <li>Enseñanza de idioma inglés en grupos reducidos con certificación internacional de la Universidad de Cambridge.</li>
+                        <li>Preparación intensiva en el área de Informática, en laboratorios propios con tecnología de última generación.</li>
+                        <li>Niveles avanzados de Informática en planillas de cálculo y base de datos, certificados por la Universidad Tecnológica Nacional.</li>
+                        <li>Materias preuniversitarias según áreas vocacionales en el ciclo superior.</li>
+                        <li>Tutoría a cargo de sus propios docentes.</li>
+
+                    </ul>
+
+                </div>
+                <a href="formulario.html" target="_self">Ir a formulario</a>
+            </dialog>
+
+            <script src="popups.js"> </script>
+
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Todos los derechos reservados © 2024 Colegio Bertrand Russell</li>
+            <li><a href="mailto:colegio@bertrandrussell.com.ar" class="mail-footer">colegio@bertrandrussell.com.ar</a></li>
+            <li class="footer-telefono">
+                <img src="img/logo-telefono.svg" width="16px" height="16px" alt="logo-telefono">
+                <p>4292-7337</p>
+            </li>
+            <li class="footer-wpp">
+                <img src="img/logo-wpp.svg" width="16px" height="16px" alt="logo-wpp">
+                <p>11-5144-5404</p>
+            </li>
+            <li>
+                <img src="img/logo-footer.svg" width="43px" height="56px" alt="logo-colegio">
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>
