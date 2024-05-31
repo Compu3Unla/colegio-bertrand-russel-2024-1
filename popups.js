@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const abrirpopupmaternal = document.querySelector("[data-id='abrir_maternal']");
     const dialogmaternal = document.querySelector(".popup_maternal");
-    const cerrarDialogoMaternal = dialogmaternal.querySelector("#cerrar_dialogo");
+    const cerrarDialogoMaternal = dialogmaternal.querySelector(".cerrar_dialogo");
 
     if (abrirpopupmaternal && dialogmaternal && cerrarDialogoMaternal) {
         abrirpopupmaternal.addEventListener("click", () => {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const abrirpopupinicial = document.querySelector("[data-id='abrir_inicial']");
     const dialoginicial = document.querySelector(".popup_inicial");
-    const cerrarDialogoInicial = dialoginicial.querySelector("#cerrar_dialogo");
+    const cerrarDialogoInicial = dialoginicial.querySelector(".cerrar_dialogo");
 
     if (abrirpopupinicial && dialoginicial && cerrarDialogoInicial) {
         abrirpopupinicial.addEventListener("click", () => {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const abrirpopupprimario = document.querySelector("[data-id='abrir_primario']");
     const dialogprimario = document.querySelector(".popup_primario");
-    const cerrarDialogoPrimario = dialogprimario.querySelector("#cerrar_dialogo");
+    const cerrarDialogoPrimario = dialogprimario.querySelector(".cerrar_dialogo");
 
     if (abrirpopupprimario && dialogprimario && cerrarDialogoPrimario) {
         abrirpopupprimario.addEventListener("click", () => {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const abrirpopupsecundario = document.querySelector("[data-id='abrir_secundario']");
     const dialogsecundario = document.querySelector(".popup_secundario");
-    const cerrarDialogoSecundario = dialogsecundario.querySelector("#cerrar_dialogo");
+    const cerrarDialogoSecundario = dialogsecundario.querySelector(".cerrar_dialogo");
 
     if (abrirpopupsecundario && dialogsecundario && cerrarDialogoSecundario) {
         abrirpopupsecundario.addEventListener("click", () => {
