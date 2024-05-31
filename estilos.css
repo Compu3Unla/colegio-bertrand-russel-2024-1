@@ -407,3 +407,97 @@ footer ul li {
     width: 388px;
     background-size: cover;
 }
+
+/*parte distincion utn*/
+
+.main-distincion-utn{
+	width: 100%;
+    height: auto;
+    padding: 275px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-distincion-utn {
+	width: 75%;
+}
+
+.texto-distincion-utn {
+	width: 50%;
+    font-family: "alegreya sans";
+    padding-bottom: 30px;    
+}
+
+.texto-distincion-utn h2 {
+	font-size: 3em;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.fondo_verde {
+	
+}
+
+.container {
+	position: relative;
+	width: 1459px;
+	height: 1021px;
+	border-radius: 100px;
+	background: #4D8E5F;
+}
+
+.slider input {
+	visibility: hidden;
+	display: none;
+}
+
+.buttons {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	button: 50px;
+	gap: 10px;
+}
+
+.buttons label {
+	width: 20px;
+	height: 20px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1;
+	transition: 300ms easy-in-out;
+	
+}
+
+.buttons label:hover{
+	scale: 1.2;
+}
+
+.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3)
+{
+	scroll-margin: 1.2;
+	width: 40px;
+}
+
+.content {
+	position: relative;
+	width: 300vw;
+	display: flex;
+	transition: 400ms easy-in-out;
+}
+
+.firstslide,.secondslide,.thirdslide {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.firstslide {
+	background-image:url("img/certificado-1.jpg")
+}
