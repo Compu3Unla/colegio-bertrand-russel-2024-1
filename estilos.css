@@ -3,6 +3,13 @@
     padding: 0px;
 }
 
+body {
+    background-color: #DDDDDD;
+    background-image: url(img/fondo-hojas.png);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
  /* header */
 header {
     width: 100%;
@@ -358,9 +365,9 @@ footer ul li {
     max-width: 800px;
     z-index: 1;
     border: none;
-    display: flex;
+    display: none;
     position: absolute;
-    top: 937px;
+    top: 1018px;
     left: 50%;
     flex-direction: column;
     background-color: #4D8E5F;
@@ -594,17 +601,19 @@ footer ul li {
 }
 .main-formulario {
 	height: auto;
-	padding: 10% 10% 10% 20%;
+	padding: 10% 10% 10% 10%;
 	font-family: Alegreya Sans;
 	display: flex;
 	flex-direction: column;
-	align-items:flex-start;
+	align-items:center;
 }
 .main-formulario h2{
-	font-size: 4em;
+	font-size: 3em;
+    align-self: flex-start;
+    padding-left: 10%;
 }
 .main-formulario h3{
-	font-size: 2.4em;
+	font-size: 2em;
 	color: white;
 	display: block;
 	height: 100px;
@@ -612,7 +621,7 @@ footer ul li {
 .main-formulario p{
 	font-family: Alegreya Sans;
 	color: white;
-	font-size: 28px;;
+	font-size: 1.1em;
 	font-weight: 500;
 }
 form{
@@ -624,33 +633,33 @@ form{
 	padding-top: 3%;
 }
 .formizq{
-	padding: 110px 120px;
+	padding: 81px 86px;
 	display: flex;
 	flex-direction: column;
 	background-color:#2D3190;
 	border-radius: 115px 0px;
-	gap: 10px;
-	width: 35%;
-	min-width: 500px;
+	gap: 4px;
+	width: 50%;
+    min-width: 273px;
 }
 .formder{
-	padding: 110px 120px;
+	padding: 81px 86px;
 	display: flex;
 	flex-direction: column;
 	background-color:#2D3190;
 	border-radius: 0px 115px;
-	gap: 10px;
-	width: 35%;
-	min-width: 500px;
+	gap: 4px;
+	width: 50%;
+    min-width: 273px;
 }
+
 label{
 	font-family: Alegreya Sans;
 	color: white;
-	font-size: 28px;;
+	font-size: 1em;
 	font-weight: 500;
 }
 input{
-	height: 25px;
 	border: none;
 	margin-bottom: 20px;
 	padding: 10px;
@@ -660,7 +669,7 @@ input{
 	height: 10%;
 	font-family: Alegreya Sans;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 1.3em;
 	background-color:#4D8E5F;
 	color: white;
 	border-radius: 43px 0px;
@@ -668,19 +677,19 @@ input{
 .turnosol{
 	display: flex;
 	flex-direction: row;
-	padding: 20px 20px 5px 30px;
+	padding: 10px 0px;
 	gap: 20px;
 }
 .nivelsol{
 	display: flex;
 	flex-direction: row;
-	padding: 20px 20px 5px 30px;
+	padding: 10px 0px;
 	gap: 20px;	
 }
 .modalidadsol{
 	display: flex;
 	flex-direction: row;
-	padding: 20px 20px 5px 30px;
+	padding: 10px 0px;
 	gap: 20px;	
 }
 input[type=submit]{
