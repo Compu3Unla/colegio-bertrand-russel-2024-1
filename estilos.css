@@ -4,10 +4,7 @@
 }
 
  /* header */
-
- header {
-    background-color: #2D3190;
-    position: fixed;
+header {
     width: 100%;
 }
 
@@ -17,6 +14,7 @@ nav {
     height: 80px;
     align-items: center;
     padding-right: 40px;
+    background-color: #2D3190;
 }
 
 .logo-header img {
@@ -94,12 +92,6 @@ ul{
     display: block;
 }
 /* fin header */
-
-body {
-    background-color: #dddddd;
-    background-image: url(img/fondo-hojas.png);
-	background-size: cover;
-}
 
 /* inicio 25 años */
 
