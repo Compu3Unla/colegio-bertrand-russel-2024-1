@@ -42,11 +42,18 @@ ul{
     width: 150px;
     height: 40px;
     justify-content: center;
-    font-family: "alegreya sans"
+    font-family: "alegreya sans";
+    font-weight: 700;
 }
 
-.inicio_nav, .trabajo_nav, .visita_nav, .inscribite {
+.inicio_nav, .trabajo_nav, .visita_nav {
     color: #DDDDDD;
+}
+
+.inscribite {
+    color: #4E4E4E;
+    background-color: #DDDDDD;
+    border-radius: 23px ;
 }
 
 .desplegable a {
@@ -118,6 +125,7 @@ ul{
 .texto-25-anios {
     width: 50%;
     font-family: "alegreya sans";
+    padding-left: 10px;
 }
 
 .texto-25-anios h2 {
@@ -128,21 +136,20 @@ ul{
 
 .fotos-25-anios {
 	padding-top: 5%;
-    display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-gap: 20px;
-	justify-items: center;
+    display: -ms-inline-grid;
 	
 }
 
 .fotos-25-anios img {
-    border-radius: 15px;
+    border-radius: 25px;
+    padding: 10px;
 	
 }
 
 .fotos-25-anios img:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    border-radius: 25px;
 }
 
 /* fin 25 años */
@@ -200,11 +207,11 @@ footer ul li {
 
 .main-confirmacion {
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 320px 0px 160px 0px;
+    justify-content: center;
 }
 
 .gracias-confirmacion {
@@ -601,6 +608,9 @@ footer ul li {
 .video-2 h3 {
     padding-top: 30px;
 }
+
+/*formulario*/
+
 .main-formulario {
 	height: auto;
 	padding: 10% 10% 10% 10%;
@@ -625,6 +635,7 @@ footer ul li {
 	color: white;
 	font-size: 1.1em;
 	font-weight: 500;
+    padding-top: 10px;
 }
 form{
 	display: flex;
@@ -668,13 +679,17 @@ input{
 	border-radius: 15px 0px;
 }
 .button-form{
-	height: 10%;
+	height: 8%;
 	font-family: Alegreya Sans;
 	font-weight: 700;
 	font-size: 1.3em;
 	background-color:#4D8E5F;
 	color: white;
 	border-radius: 43px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 .turnosol{
 	display: flex;
@@ -698,3 +713,4 @@ input[type=submit]{
 	display: block;
 	margin: 50px 0px 30px;
 }
+/*fin de formulario*/
