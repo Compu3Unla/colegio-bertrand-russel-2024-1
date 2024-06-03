@@ -435,7 +435,40 @@ footer ul li {
     padding-bottom: 30px;
 }
 
-.fondo_verde {
+.outer-container {
+	background-color: #4D8E5F;
+	padding: 80px;
+	margin: 30px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.slider-box {
+	max-width: 1292px;
+	overflow: hidden;
+}
+
+.slider-box ul {
+	display: flex;
+	width: 300%;
+	animation: slide 20s infinite ease-in-out;
+}
+
+@keyframes slide {
+	0% { margin-left: 0%; }
+	20% { margin-left: 0%; }
+	
+	25% { margin-left: -100%; }
+	45% { margin-left: -100%; }
+	
+	50% { margin-left: -200%; }
+	70% { margin-left: -200%; }
+	
+	75% { margin-left: 0%; }
+	100% { margin-left: 0%; }
 	
 }
 
