@@ -69,6 +69,7 @@ nav ul li:hover {
 body {
     background-color: #dddddd;
     background-image: url(img/fondo-hojas.png);
+	background-size: cover;
 }
 
 /* inicio 25 años */
@@ -341,12 +342,9 @@ footer ul li {
     position: absolute;
     top: 937px;
     left: 50%;
-    display: flex;
     flex-direction: column;
     background-color: #4D8E5F;
     border-radius: 60px 0px;
-    display: none;
-
 }
 
 .popup_maternal a, .popup_inicial a, .popup_primario a, .popup_secundario a{
@@ -655,4 +653,99 @@ footer ul li {
 
 .video-2 h3 {
     padding-top: 30px;
+}
+.main-formulario {
+	height: auto;
+	padding: 10% 10% 10% 20%;
+	font-family: Alegreya Sans;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+.main-formulario h2{
+	font-size: 4em;
+}
+.main-formulario h3{
+	font-size: 2.4em;
+	color: white;
+	display: block;
+	height: 100px;
+}
+.main-formulario p{
+	font-family: Alegreya Sans;
+	color: white;
+	font-size: 28px;;
+	font-weight: 500;
+}
+form{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	gap: 60px;
+	padding-top: 3%;
+}
+.formizq{
+	padding: 110px 120px;
+	display: flex;
+	flex-direction: column;
+	background-color:#2D3190;
+	border-radius: 115px 0px;
+	gap: 10px;
+	width: 35%;
+	min-width: 500px;
+}
+.formder{
+	padding: 110px 120px;
+	display: flex;
+	flex-direction: column;
+	background-color:#2D3190;
+	border-radius: 0px 115px;
+	gap: 10px;
+	width: 35%;
+	min-width: 500px;
+}
+label{
+	font-family: Alegreya Sans;
+	color: white;
+	font-size: 28px;;
+	font-weight: 500;
+}
+input{
+	height: 25px;
+	border: none;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 15px 0px;
+}
+.button-form{
+	height: 10%;
+	font-family: Alegreya Sans;
+	font-weight: 700;
+	font-size: 25px;
+	background-color:#4D8E5F;
+	color: white;
+	border-radius: 43px 0px;
+}
+.turnosol{
+	display: flex;
+	flex-direction: row;
+	padding: 20px 20px 5px 30px;
+	gap: 20px;
+}
+.nivelsol{
+	display: flex;
+	flex-direction: row;
+	padding: 20px 20px 5px 30px;
+	gap: 20px;	
+}
+.modalidadsol{
+	display: flex;
+	flex-direction: row;
+	padding: 20px 20px 5px 30px;
+	gap: 20px;	
+}
+input[type=submit]{
+	display: block;
+	margin: 50px 0px 30px;
 }
