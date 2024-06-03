@@ -36,14 +36,15 @@ nav ul {
 nav ul li {
     color: #dddddd;
     list-style: none;
-    padding: 0px 100px 0px 100px;
     font-family: "alegreya sans";
     font-size: 1.5em;
     font-weight: 700;
     letter-spacing: 0.5px;
     height: 50px;
+    width: 250px ;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 nav ul li:hover {
@@ -63,6 +64,7 @@ nav ul li:hover {
     color: #dddddd;
     background-color: #4d8e5f;
 }
+
 
 /* fin header */
 
