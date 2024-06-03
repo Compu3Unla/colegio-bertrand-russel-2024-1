@@ -6,19 +6,25 @@
     <title>Colegio Bertrand Russell</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
     <header>
         <nav>
             <div class="logo-header">
-                <img src="img/logo.svg" width="93px" height="165px" alt="logo del sitio">
+                <img src="logo.svg" width="93px" height="165px" alt="logo del sitio">
             </div>
-            <ul>
-                <li>Inicio</li>
-                <li>Trabajo</li>
-                <li>Visita</li>
-                <li class="inscribite">Inscribite</li>
+            <ul class="nav_principal">
+                <li><a class="inicio_nav" href="">Inicio</a></li>
+                <li> <a class="trabajo_nav" href="">Trabajo</a>
+                    <ul class="desplegable">
+                        <li><a href="">25 Años</a></li>
+                        <li><a href="">Distinción UTN</a></li>
+                        <li><a href="">Feria de ciencias</a></li>
+                    </ul>
+                </li>
+                <li> <a class="visita_nav" href="">Visita</a></li>
+                <li> <a class="inscribite" href="">Inscribite</a></li>
             </ul>
+            
         </nav>
     </header>
     <main>
@@ -52,7 +58,8 @@
             </div>
 
             <dialog class="popup_maternal">
-                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" id="cerrar_dialogo">
+                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" class="cerrar_dialogo">
+
                 <div class="imagen_texto_maternal">
                     <div class="imagen_maternal">
 
@@ -73,7 +80,8 @@
             </dialog>
 
             <dialog class="popup_inicial">
-                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" id="cerrar_dialogo">
+
+                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" class="cerrar_dialogo">
                 <div class="imagen_texto_inicial">
                     <div class="imagen_inicial">
 
@@ -93,7 +101,7 @@
             </dialog>
 
             <dialog class="popup_primario">
-                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" id="cerrar_dialogo">
+                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" class="cerrar_dialogo">
                 <div class="imagen_texto_primario">
                     <div class="imagen_primario">
 
@@ -113,7 +121,7 @@
             </dialog>
 
             <dialog class="popup_secundario">
-                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" id="cerrar_dialogo">
+                <img src="img/cruz_cerrar-08.svg" alt="cruz cerrar" height="19px" width="19px" class="cerrar_dialogo">
                 <div class="imagen_texto_secundario">
                     <div class="imagen_secundario">
 

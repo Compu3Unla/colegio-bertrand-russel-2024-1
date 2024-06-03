@@ -5,71 +5,100 @@
 
  /* header */
 
-header {
-    background-color: #2d3190;
-    width: 100%;
-    height: 4%;
-    padding: 30px 0px 30px 0px;
+ header {
+    background-color: #2D3190;
     position: fixed;
-    align-items: center;
-    z-index: 100;
+    width: 100%;
 }
 
-header nav {
+nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    height: 80px;
+    align-items: center;
     padding-right: 40px;
-
 }
 
 .logo-header img {
     position: absolute;
-    top: 22px;
-    padding-left: 40px;
+    top: 12px;
+    left: 2%;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul li {
-    color: #dddddd;
+ul{
     list-style: none;
-    padding: 0px 100px 0px 100px;
-    font-family: "alegreya sans";
-    font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    height: 50px;
+    
+}
+
+.nav_principal li a {
+    text-decoration: none;
     display: flex;
     align-items: center;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    font-family: "alegreya sans"
 }
 
-nav ul li:hover {
-    color: #4e4e4e;
-    background-color: #dddddd;
-    border-radius: 25px;
+.inicio_nav, .trabajo_nav, .visita_nav, .inscribite {
+    color: #DDDDDD;
+}
+
+.desplegable a {
+    color: #4E4E4E;
+}
+
+.inicio_nav:hover {
+    background-color: #DDDDDD;
+    color: #4E4E4E;
+    border-radius: 23px;
     transition:0.2s ease;
 }
 
-.inscribite {
-    color: #4e4e4e;
-    background-color: #dddddd;
-    border-radius: 25px;
+.trabajo_nav:hover {
+    background-color: #DDDDDD;
+    color: #4E4E4E;
+    border-radius: 23px 23px 0px 0px;
+    transition:0.2s ease;
+}
+
+.visita_nav:hover {
+    background-color: #DDDDDD;
+    color: #4E4E4E;
+    border-radius: 23px;
+    transition:0.2s ease;
 }
 
 .inscribite:hover {
-    color: #dddddd;
-    background-color: #4d8e5f;
+    background-color: #4D8E5F;
+    color: #DDDDDD;
+    border-radius: 23px;
+    transition:0.2s ease;
 }
 
+.desplegable {
+    background-color: #DDDDDD;
+    border-radius: 0px 0px 23px 23px;
+}
+
+.nav_principal > li {
+    float: left;
+}
+
+.nav_principal li ul {
+    display: none;
+    position: absolute;
+}
+
+.nav_principal li:hover ul {
+    display: block;
+}
 /* fin header */
 
 body {
     background-color: #dddddd;
     background-image: url(img/fondo-hojas.png);
+	background-size: cover;
 }
 
 /* inicio 25 años */
@@ -90,7 +119,6 @@ body {
 .texto-25-anios {
     width: 50%;
     font-family: "alegreya sans";
-    padding-bottom: 30px;    
 }
 
 .texto-25-anios h2 {
@@ -342,11 +370,68 @@ footer ul li {
     position: absolute;
     top: 937px;
     left: 50%;
-    display: flex;
     flex-direction: column;
     background-color: #4D8E5F;
     border-radius: 60px 0px;
-    display: none;
+}
+
+.popup_maternal a, .popup_inicial a, .popup_primario a, .popup_secundario a{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    color: #dddddd;
+    font-family: "alegreya sans";
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.popup_maternal img, .popup_inicial img, .popup_primario img, .popup_secundario img {
+    position: absolute;
+    left: 93%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.imagen_maternal {
+    background-image: url(img/foto-maternal.jpg);
+    width:388px;
+
+}
+
+.imagen_texto_maternal, .imagen_texto_inicial, .imagen_texto_primario, .imagen_texto_secundario {
+    display: flex;
+    height: 80%;
+}
+
+.imagen_texto_maternal ul, .imagen_texto_inicial ul, .imagen_texto_primario ul, .imagen_texto_secundario ul {
+    width: 40%;
+    padding: 56px 60px 25px 60px;
+}
+
+.imagen_texto_maternal ul li, .imagen_texto_inicial ul li, .imagen_texto_primario ul li, .imagen_texto_secundario ul li {
+    color: #dddddd;
+    font-family: "alegreya sans";
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.imagen_inicial {
+    background-image: url(img/foto-jardin.jpg);
+    width:388px;
+    background-size: cover;
+}
+
+.imagen_primario {
+    background-image: url(img/foto-primaria.jpg);
+    width: 388px;
+    background-size: cover;
+}
+
+.imagen_secundario {
+    background-image: url(img/foto-secundaria.jpg);
+    width: 388px;
+    background-size: cover;
 }
 
 .popup_maternal a, .popup_inicial a, .popup_primario a, .popup_secundario a{
@@ -469,68 +554,143 @@ footer ul li {
 	
 	75% { margin-left: 0%; }
 	100% { margin-left: 0%; }
-	
+
+/* trabajos - feria de ciencias */
+
+.main-feria {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 320px 0px 160px 0px;
 }
 
-.container {
-	position: relative;
-	width: 1459px;
-	height: 1021px;
-	border-radius: 100px;
-	background: #4D8E5F;
+.videos {
+    font-family: Alegreya Sans;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
 }
 
-.slider input {
-	visibility: hidden;
-	display: none;
+.videos h2 {
+    font-size: 3em;
+    font-weight: 700;
+    padding-bottom: 60px;
 }
 
-.buttons {
-	position: absolute;
-	width: 100%;
+.videos p {
+    font-size: 1.2em;
+    font-weight: 550;
+    padding-bottom: 20px;
+}
+
+.videos h3 {
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+
+.video-2 p {
+    padding-bottom: 0px;
+}
+
+.video-2 h3 {
+    padding-top: 30px;
+}
+.main-formulario {
+	height: auto;
+	padding: 10% 10% 10% 20%;
+	font-family: Alegreya Sans;
 	display: flex;
-	justify-content: center;
-	button: 50px;
+	flex-direction: column;
+	align-items:flex-start;
+}
+.main-formulario h2{
+	font-size: 4em;
+}
+.main-formulario h3{
+	font-size: 2.4em;
+	color: white;
+	display: block;
+	height: 100px;
+}
+.main-formulario p{
+	font-family: Alegreya Sans;
+	color: white;
+	font-size: 28px;;
+	font-weight: 500;
+}
+form{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	gap: 60px;
+	padding-top: 3%;
+}
+.formizq{
+	padding: 110px 120px;
+	display: flex;
+	flex-direction: column;
+	background-color:#2D3190;
+	border-radius: 115px 0px;
 	gap: 10px;
+	width: 35%;
+	min-width: 500px;
 }
-
-.buttons label {
-	width: 20px;
-	height: 20px;
-	background-color: #FFFFFF;
-	border-radius: 50%;
-	cursor: pointer;
-	z-index: 1;
-	transition: 300ms easy-in-out;
-	
-}
-
-.buttons label:hover{
-	scale: 1.2;
-}
-
-.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
-.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
-.slider input:nth-child(3):checked ~ .buttons label:nth-child(3)
-{
-	scroll-margin: 1.2;
-	width: 40px;
-}
-
-.content {
-	position: relative;
-	width: 300vw;
+.formder{
+	padding: 110px 120px;
 	display: flex;
-	transition: 400ms easy-in-out;
+	flex-direction: column;
+	background-color:#2D3190;
+	border-radius: 0px 115px;
+	gap: 10px;
+	width: 35%;
+	min-width: 500px;
 }
-
-.firstslide,.secondslide,.thirdslide {
-	position: relative;
+label{
+	font-family: Alegreya Sans;
+	color: white;
+	font-size: 28px;;
+	font-weight: 500;
+}
+input{
+	height: 25px;
+	border: none;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 15px 0px;
+}
+.button-form{
+	height: 10%;
+	font-family: Alegreya Sans;
+	font-weight: 700;
+	font-size: 25px;
+	background-color:#4D8E5F;
+	color: white;
+	border-radius: 43px 0px;
+}
+.turnosol{
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row;
+	padding: 20px 20px 5px 30px;
+	gap: 20px;
 }
-
-.firstslide {
-	background-image:url("img/certificado-1.jpg")
+.nivelsol{
+	display: flex;
+	flex-direction: row;
+	padding: 20px 20px 5px 30px;
+	gap: 20px;	
+}
+.modalidadsol{
+	display: flex;
+	flex-direction: row;
+	padding: 20px 20px 5px 30px;
+	gap: 20px;	
+}
+input[type=submit]{
+	display: block;
+	margin: 50px 0px 30px;
 }
