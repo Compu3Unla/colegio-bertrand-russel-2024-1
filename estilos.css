@@ -8,6 +8,11 @@ body {
     background-image: url("img/fondo-hojas.svg");
     background-size: contain;
     background-repeat: repeat;
+    cursor: url(img/cursor.png), auto;
+}
+
+a {
+    cursor: url(img/cursor-click.png), auto;
 }
 
  /* header */
@@ -365,6 +370,7 @@ footer ul li {
 .botones_ideario ul li button:hover {
     background-color: #4D8E5F;
     cursor: pointer;
+    cursor: url(img/cursor-click.png), auto;
 }
 
 /*popups del ideario*/
