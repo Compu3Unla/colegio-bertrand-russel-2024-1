@@ -622,7 +622,7 @@ footer ul li {
 .main-formulario h2{
 	font-size: 3em;
     align-self: flex-start;
-    padding-left: 10%;
+    padding: 0% 0% 5% 10%;
 }
 .main-formulario h3{
 	font-size: 2em;
@@ -642,28 +642,25 @@ form{
 	flex-direction: row;
 	justify-content: space-between;
 	width: 80%;
+	min-width: 820px;
 	gap: 60px;
-	padding-top: 3%;
-}
-.formizq{
-	padding: 81px 86px;
-	display: flex;
-	flex-direction: column;
+	padding-top: 2%;
 	background-color:#2D3190;
 	border-radius: 115px 0px;
-	gap: 4px;
-	width: 50%;
-    min-width: 273px;
 }
-.formder{
-	padding: 81px 86px;
+.formizq{
+	padding: 50px 15px 50px 86px;
 	display: flex;
 	flex-direction: column;
-	background-color:#2D3190;
-	border-radius: 0px 115px;
 	gap: 4px;
 	width: 50%;
-    min-width: 273px;
+}
+.formder{
+	padding: 50px 86px 50px 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	width: 50%;
 }
 
 label{
@@ -683,6 +680,7 @@ input{
 	font-family: Alegreya Sans;
 	font-weight: 700;
 	font-size: 1.3em;
+	text-decoration: none;
 	background-color:#4D8E5F;
 	color: white;
 	border-radius: 43px 0px;
@@ -690,6 +688,10 @@ input{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+}
+.button-form:hover{
+	background-color: #EDEDED;
+	color: #2D3190;
 }
 .turnosol{
 	display: flex;
