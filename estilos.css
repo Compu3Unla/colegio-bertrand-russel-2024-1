@@ -17,6 +17,7 @@ a {
 
  /* header */
 header {
+    z-index: 90;
     width: 100%;
 }
 
@@ -94,6 +95,7 @@ ul{
 }
 
 .desplegable {
+    z-index: 99;
     background-color: #DDDDDD;
     border-radius: 0px 0px 23px 23px;
 }
