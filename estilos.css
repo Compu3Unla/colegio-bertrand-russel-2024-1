@@ -15,9 +15,16 @@ a {
     cursor: url(img/cursor-click.png), auto;
 }
 
+main {
+    padding-top: 80px;
+}
+
  /* header */
 header {
+    height: 80px;
     width: 100%;
+    z-index: 100;
+    position: fixed;
 }
 
 nav {
@@ -96,6 +103,7 @@ ul{
 .desplegable {
     background-color: #DDDDDD;
     border-radius: 0px 0px 23px 23px;
+    z-index: 90;
 }
 
 .nav_principal > li {
@@ -384,7 +392,7 @@ footer ul li {
     border: none;
     display: none;
     position: absolute;
-    top: 1018px;
+    top: 1017px;
     left: 50%;
     flex-direction: column;
     background-color: #4D8E5F;
@@ -773,7 +781,7 @@ input[type=submit]{
 		border: none;
 		display: none;
 		position: absolute;
-		top: 985px;
+		top: 984px;
 		left: 5%;
 		flex-direction: column;
 		border-radius: 60px 0px;
@@ -820,62 +828,62 @@ input[type=submit]{
 		padding: 20px;
 	}
 	
-	footer {
-    height: 15%;
-    padding: 20px 0px 20px 0px;
-	}
+        footer {
+            height: 15%;
+            padding: 20px 0px 20px 0px;
+        }
 
-	footer ul {
-		height: 50%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		list-style: none;
-	}
+        footer ul {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+        }
 
-	footer ul li {
-		display: flex;
-		padding: 10px 0px;
-		font-size: 1.5em;
-	}
-	footer img{
-		transform: scale(2);
-	}
-	.logofooter{
-		padding-top: 40px;
-	}
+        footer ul li {
+            display: flex;
+            padding: 10px 0px;
+            font-size: 1.5em;
+        }
+        footer img{
+            transform: scale(2);
+        }
+        .logofooter{
+            padding-top: 40px;
+        }
 
-	.mail-footer {
-		text-decoration:underline;
-		color: #ffffff;
-		font-weight: 700;
-		letter-spacing: 0.5px;
-	}
+        .mail-footer {
+            text-decoration:underline;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
 
-	.footer-telefono, .footer-wpp {
-		font-size: 2em;
-	}
+        .footer-telefono, .footer-wpp {
+            font-size: 2em;
+        }
 
-	.footer-telefono img, .footer-wpp img {
-		padding-right: 11px;
-	}
-	.nav_principal{
-		display: none;
-	}
-	header nav{
-		display: flex;
-		justify-content: center;
-	}
-	.carrusel_index h2{
-		font-size: 4.5em;
-	}
-	.logo-header img{
-		left: 42%;
-	}
-	.mapa{
-	display: flex;
-	justify-content: center;
-	padding-bottom: 50px;
-	}
-}
+        .footer-telefono img, .footer-wpp img {
+            padding-right: 11px;
+        }
+        .nav_principal{
+            display: none;
+        }
+        header nav{
+            display: flex;
+            justify-content: center;
+        }
+        .carrusel_index h2{
+            font-size: 4.5em;
+        }
+        .logo-header img{
+            left: 42%;
+        }
+        .mapa{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+    }
