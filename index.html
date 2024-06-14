@@ -5,11 +5,15 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Colegio Bertrand Russell</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <div class="logo-header"> 
                 <img src="img/logo.svg" alt="logo del sitio" height="165px" width="93px">
             </div>
@@ -22,8 +26,26 @@
                         <li><a href="feria.html">Feria de ciencias</a></li>
                     </ul>
                 </li>
-                <li><a class="visita_nav">Visita</a></li>
                 <li><a class="inscribite" href="formulario.html">Inscribite</a></li>
+            </ul>
+        </nav>
+        <nav class="nav_responsive">
+            <label class="hamburguesa" for="menu_hamburguesa">
+                <img src="img/menu_hamburguesa-01.svg" alt="menu hamburguesa" width="25px" height="17.6px">
+                <img class="logo_responsive" src="img/logo_media.svg" alt="logo del sitio" height="131px" width="72px">
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="botones_menu_hamburguesa">
+                <div>
+                    <li class="incio_responsive" ><a href="index.html">Inicio</a></li>
+                    <li class="li_trabajo">
+                        <a class="a_trabajo" href="25-años.html">Trabajo</a>
+                        <a class="dentro_trabajo_25"  href="25-años.html">25 años</a>
+                        <a class="dentro_trabajo" href="distincion-utn.html">Distinción UTN</a>
+                        <a class="dentro_trabajo" href="feria.html">Feria de Ciencias</a>
+                    </li>
+                    <li class="form_responsive" ><a href="formulario.html">Inscribite</a></li>
+                </div>
             </ul>
         </nav>
         
@@ -161,7 +183,7 @@
                 <p>11-5144-5404</p>
             </li>
             <li class="logofooter">
-                <img src="img/logo-footer.svg" width="43px" height="56px" alt="logo-colegio">
+                <img src="img/logo-footer.svg" width="44px" height="59px" alt="logo-colegio">
             </li>
         </ul>
     </footer>
