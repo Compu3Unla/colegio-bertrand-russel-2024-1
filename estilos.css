@@ -5,7 +5,7 @@
 
 body {
     background-color: #DDDDDD;
-    background-image: url("img/fondo-hojas.svg");
+    background-image: url("img/iconos/fondo-hojas.svg");
     background-size: contain;
     background-repeat: repeat;
     cursor: url(img/cursor.png), auto;
@@ -298,7 +298,7 @@ footer ul li {
 }
 
 .carrusel_img {
-    background-image: url(img/carrusel-foto-1.jpg);
+    background-image: url(img/landing/carrusel-foto-1.jpg);
     background-repeat: no-repeat;
     height: 550px;
     width: 100%;
@@ -309,11 +309,11 @@ footer ul li {
 
 @keyframes carrusel_fotos {
     33% {
-        background-image: url(img/carrusel-foto-2.jpg);
+        background-image: url(img/landing/carrusel-foto-2.jpg);
     }
 
     65% {
-        background-image: url(img/carrusel-foto-3.jpg);
+        background-image: url(img/landing/carrusel-foto-3.jpg);
     }
 }
 
