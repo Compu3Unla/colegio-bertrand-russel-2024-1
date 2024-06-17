@@ -318,7 +318,7 @@ footer ul li {
 }
 
 .carrusel_slider_puntos {
-    background-image: url(img/puntos_carrusel_index-01.svg);
+    background-image: url(img/iconos/puntos_carrusel_index-01.svg);
     height: 21px;
     width: 132px;
     margin-top: 20px;
@@ -328,11 +328,11 @@ footer ul li {
 
 @keyframes carrusel_puntos {
     33% {
-        background-image: url(img/puntos_carrusel_index-02.svg);
+        background-image: url(img/iconos/puntos_carrusel_index-02.svg);
     }
 
     65% {
-        background-image: url(img/puntos_carrusel_index-03.svg);
+        background-image: url(img/iconos/puntos_carrusel_index-03.svg);
     }
 }
 
