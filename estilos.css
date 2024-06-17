@@ -949,7 +949,7 @@ input[type=submit] {
     .imagen_texto_inicial ul li,
     .imagen_texto_primario ul li,
     .imagen_texto_secundario ul li {
-        font-size: 1em;
+        font-size: 1.3em;
         padding-bottom: 20px;
     }
 
