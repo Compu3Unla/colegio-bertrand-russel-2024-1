@@ -857,7 +857,7 @@ input[type=submit] {
     }
 
     .ideario ul li {
-        font-size: 1em;
+        font-size: 1.3em;
         max-width: 600px;
         letter-spacing: 0px;
     }
@@ -1114,6 +1114,6 @@ input[type=submit] {
 
     .logo_responsive {
         position: absolute;
-        left: 44%
+        left: 42%
     }
 }
